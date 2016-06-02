@@ -1,3 +1,16 @@
+@media screen and (max-width: 1024px) {
+  .mdl-layout__header-row {
+    font-size: 10px;
+    height: 115%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .mdl-tabs {
+    display: none;
+  }
+}
+
 .logo-font {
   padding-top: 250px;
   font-size: 60px;
@@ -34,12 +47,12 @@
   top: 5px;
 }
 
-.logo-font-typed {
-  margin-left: 6px;
+.mdl-layout__header.is-casting-shadow {
+  height: 55px;
 }
 
-.mdl-layout__header {
-  background: gray;
+.logo-font-typed {
+  margin-left: 6px;
 }
 
 .logo_text {
@@ -60,6 +73,7 @@
 
 .mdl-layout__header {
   background-color: white;
+  min-height: 55px;
 }
 
 .mdl-layout__header-row .mdl-navigation__link {
@@ -68,9 +82,15 @@
 
 .mdl-grid {
   background-color: #03A9F4;
+  height: 370px;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.mdl-tabs {
+  margin-left: 40px;
 }
 
 .mdl-layout__header-row {
   padding: 0 24px;
-  height: 80px;
 }
