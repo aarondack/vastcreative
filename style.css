@@ -80,17 +80,64 @@
   color: black;
 }
 
-.mdl-grid {
+.mdl-grid.initial {
+  overflow: hidden;
   background-color: #03A9F4;
   height: 370px;
-  padding-top: 50px;
   width: 100%;
+  box-shadow:  0px 0px 8px 2px #000000;
 }
 
+.mdl-grid.container {
+  background-color: white;
+}
+
+.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect-button {
+  background: white;
+  color: #03A9F4;
+}
+
+.mdl-cell.mdl-cell--6-col.mdl-cell--8-col-tablet-image {
+  margin-top:112px;
+  /*padding-left: 140px;*/
+  /*background: url('./assets/img_mobile_device.png') no-repeat;*/
+}
+
+.mdl-cell.mdl-cell--5-col.mdl-cell--8-col-tablet-text {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.mdl-cell.mdl-cell--5-col.mdl-cell--8-col-tablet-services {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.under-header-text {
+  font-size: 15px;
+  color: white;
+  font-weight: 200;
+}
+.header-text {
+  font-size: 35px;
+  color: white;
+}
 .mdl-tabs {
   margin-left: 40px;
 }
 
 .mdl-layout__header-row {
   padding: 0 24px;
+}
+
+.our-service {
+  font-size: 35px;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+
+.mdl-card.right {
+  float: right;
 }
