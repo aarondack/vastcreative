@@ -29,18 +29,6 @@
   color: white
 }
 
-.boilerplate-section {
-  position: relative;
-  height: 800px;
-  width: auto;
-  background: url('assets/switchel-room.jpg') center 30% no-repeat;
-  background-size: cover;
-}
-
-.switchel-transparent {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(1%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))),url('assets/switchel-room.jpg') center / cover;
-}
-
 .layout-logo {
   height: 150px;
   position: relative;
@@ -85,11 +73,20 @@
   background-color: #03A9F4;
   height: 370px;
   width: 100%;
-  box-shadow:  0px 0px 8px 2px #000000;
+  box-shadow:  0px 0px 8px 2px grey;
 }
 
 .mdl-grid.container {
   background-color: white;
+  height: 500px;
+  display: flex;
+  width: 100%;
+  margin-top:10px;
+}
+
+.city-text {
+  text-align: center;
+  font-family: inherit;
 }
 
 .mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect-button {
@@ -99,19 +96,28 @@
 
 .mdl-cell.mdl-cell--6-col.mdl-cell--8-col-tablet-image {
   margin-top:112px;
-  /*padding-left: 140px;*/
-  /*background: url('./assets/img_mobile_device.png') no-repeat;*/
+}
+
+.mdl-cell.mdl-cell--5-col.mdl-cell--8-col-tablet-austin {
+  flex: 1;
+  margin-left: 20px;
+  height: inherit;
+}
+
+.mdl-cell.mdl-cell--5-col.mdl-cell--8-col-tablet-newyork {
+  flex: 1;
+  height: inherit;
 }
 
 .mdl-cell.mdl-cell--5-col.mdl-cell--8-col-tablet-text {
   margin-top: 80px;
-  margin-left: 100px;
+}
+.mdl-cell.mdl-cell--5-col.mdl-cell--8-col-text {
+  flex: 1;
+  height: inherit;
+  margin-top: 70px;
 }
 
-.mdl-cell.mdl-cell--5-col.mdl-cell--8-col-tablet-services {
-  margin-top: 40px;
-  margin-left: 100px;
-}
 .under-header-text {
   font-size: 15px;
   color: white;
@@ -131,13 +137,64 @@
 
 .our-service {
   font-size: 35px;
+  margin-left: 45px;
 }
 
-.demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+.austin {
+  height: 80%;
 }
 
-.mdl-card.right {
-  float: right;
+.newyork {
+  height: 80%;
+  margin-left: 75px;
+}
+
+.mdl-grid.services {
+  background-color: #EBEFF2;
+  height: 370px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mdl-card.mdl-shadow--6dp.cards {
+  margin-bottom: 70px;
+  margin-top: 60px;
+}
+
+.mdl-grid.text-services {
+  background-color: #EBEFF2;
+  height: 50px;
+  width: 100%;
+}
+
+.lists {
+  margin-left: 20px;
+}
+
+.card-container {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.ux {
+  width: 15%;
+  background: url('./assets/img_ux.png') no-repeat;
+  background-size: 100%;
+  align-items: center;
+}
+
+.ui {
+  width: 15%;
+  background: url('./assets/img_ui.png') no-repeat;
+  background-size: 100%;
+  align-items: center;
+}
+
+.custom-dev {
+  width: 15%;
+  background: url('./assets/img_dev.png') no-repeat;
+  background-size: 100%;
+  align-items: center;
 }

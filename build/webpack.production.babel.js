@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 const SRC_DIR = path.join(__dirname, '../src');
+const IMG_DIR = path.join(__dirname, '../assets');
 
 export default { 
     devtool: 'source-map',
@@ -33,13 +34,16 @@ export default { 
         },
         {
           test: /\.(png|jpg)$/,
+          include: IMG_DIR,
           loader: 'file-loader?name=images/[name].[ext]'
         },
         {
+          test: /\.html$/,
+          loader: 'html-loader'
+        },
+        {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract(
-              'css-loader!postcss-loader'
-            )
+            loader: 'style-loader!css-loader!postcss-loader'
         }]
     },
     resolve: {

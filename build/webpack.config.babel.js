@@ -40,11 +40,6 @@ export default { 
             loader: 'style-loader!css-loader!postcss-loader'
         }]
     },
-    resolve: {
-        alias: {
-            '~': SRC_DIR
-        }
-    },
     postcss: [
         autoprefixer({ browsers: ['last 2 versions'] })
     ]

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device=width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- <link rel="stylesheet" href="/static/style.css"> -->
-  <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/static/style.css">
+  <!-- <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8"> -->
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-light_blue.min.css">
   <title>Vast Creative</title>
 </head>
@@ -17,12 +17,12 @@
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <a class="nav-item" href="/">
-          <img src="/assets/logo_image.png" alt="Vast Creative Logo" class="logo"/>
+          <img src="/static/images/logo_image.png" alt="Vast Creative Logo" class="logo"/>
         </a>
           <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-                 <a href="#starks-panel" class="mdl-tabs__tab is-active">Home</a>
-                 <a href="#lannisters-panel" class="mdl-tabs__tab">About Us</a>
-                 <a href="#targaryens-panel" class="mdl-tabs__tab">Our Work</a>
+                 <a href="#home" class="mdl-tabs__tab is-active">Home</a>
+                 <a href="#aboutus" class="mdl-tabs__tab">About Us</a>
+                 <a href="#ourwork" class="mdl-tabs__tab">Our Work</a>
           </div>
       </div>
     </header>
@@ -34,30 +34,90 @@
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect-button">Work with us</button>
           </div>
           <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet-image">
-            <img src="/assets/img_mobile_device.png" alt="" />
+            <img src="/static/images/img_mobile_device.png" alt="" />
           </div>
       </div>
-
-
       <div class="mdl-grid container">
-        <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet-services">
-          <h3 class="our-service">Our Services</h3>
-          <div class="mdl-card">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">title Text Goes Here</h2>
-            </div>
+        <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet-austin">
+          <img src="/static/images/austin.png" class="austin" alt="" />
+          <h2 class="city-text">Austin, TX</h2>
         </div>
-        <div class="mdl-card center">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+        <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet-newyork">
+          <img src="/static/images/newyork.png" class="newyork" alt="" />
+          <h2 class="city-text">New York City</h2>
+        </div>
+        <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-text">
+          <h3 class="home">Where we call home</h3>
+          <p>
+            We work with clients all around the country. If you are in Austin or New York feel free to contact us to
+            meetup for some breakfast tacos or pizza. Talk to us about your porject and we can find a solution that fits your
+            product's needs.
+          </p>
+        </div>
+      </div>
+      <div class="mdl-grid text-services">
+        <h3 class="our-service">Our Services</h3>
+      </div>
+      <div class="mdl-grid services">
+        <div class="mdl-card mdl-shadow--6dp cards">
+        <div class="card-container">
+          <div class="ux">
           </div>
-      </div>
-      <div class="mdl-card right">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+          <div class="mdl-card__title">
+            User Experience
+          </div>
+        </div>
+          <div class="mdl-card__supporting-text">
+            We work to understand your customer and how your product can solve their needs.
+          </div>
+            <div class="lists">
+             <li>Information architecture</li>
+             <li>Wireframes</li>
+             <li>Personas</li>
+             <li>Prototypes</li>
+           </div>
+          </div>
+       <div class="mdl-card mdl-shadow--6dp cards">
+          <div class="card-container">
+            <div class="ui">
+            </div>
+          <div class="mdl-card__title">
+            User Interface
+          </div>
+        </div>
+          <div class="mdl-card__supporting-text">
+            Once we have built the struc  ture then the focus turns to ensuring your product looks great.
+          </div>
+        <div>
+          <div class="lists">
+            <li>Style Guides</li>
+            <li>UI Kits</li>
+            <li>Pixel Perfect Mockups</li>
+            <li>CSS/HTML</li>
+        </div>
         </div>
       </div>
+        <div class="mdl-card mdl-shadow--6dp cards">
+          <div class="card-container">
+            <div class="custom-dev">
+            </div>
+          <div class="mdl-card__title">
+            Custom Development
+          </div>
+        </div>
+          <div class="mdl-card__supporting-text">
+            We can bring your product idea to life. Let us build your custom web, iOS, or Android app.
+          </div>
+          <div class="lists">
+            <li>Agile Methodologies</li>
+            <li>API Development</li>
+            <li>Texting / Quality Assurance</li>
+            <li>Deployment / App Store Delivery</li>
+        </div>
+        </div>
       </div>
+    </div>
+  </div>
 </body>
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 <script src="/static/bundle.js"></script>

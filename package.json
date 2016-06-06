@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node build/start-dev",
     "build": "webpack -d --config ./build/webpack.production.babel.js --progress && node build/start-prod",
-    "build-clean": "rm -rf dist"
+    "build-clean": "rm -rf dist && npm run build"
   },
   "author": "Vast Creative",
   "license": "ISC",
@@ -23,6 +23,9 @@
   "devDependencies": {
     "babel-preset-react-hmre": "^1.1.1",
     "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
     "postcss-loader": "^0.9.1",
     "style-loader": "^0.13.1",
     "webpack-dev-server": "^1.14.1"

@@ -13,7 +13,6 @@ const publicPath = path.join(__dirname, '../dist/');
 const indexPath = path.join(__dirname, '../index.html');
 app.use('/static', express.static(publicPath));
 
-
 app.get('*', (req, res) => {
   res.sendFile(indexPath);
 });
